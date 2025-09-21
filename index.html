@@ -1,294 +1,198 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
+<!-- The head section includes meta tags, fonts with Google Fonts and Font Awesome, stylesheets, and the landing page title -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
+    <link rel="icon" type="image/png" href="public/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <title>Hostel Manager</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link rel="stylesheet" href="css/style.css">
 </head>
+
+<!-- The body section contains the header, main content, and footer of the landing page -->
 <body>
-    <div class="relative flex h-auto min-h-screen w-full flex-col bg-[#f8fcfb] group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7f3f1] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#0e1b19]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_6_319)">
-                  <path
-                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
-                    fill="currentColor"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
-                </defs>
-              </svg>
-            </div>
-            <h2 class="text-[#0e1b19] text-lg font-bold leading-tight tracking-[-0.015em]">Hostel Manager</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#0e1b19] text-sm font-medium leading-normal" href="#inicio">Inicio</a>
-              <a class="text-[#0e1b19] text-sm font-medium leading-normal" href="#explorar">Explorar</a>
-              <a class="text-[#0e1b19] text-sm font-medium leading-normal" href="#servicios">Servicios</a>
-              <a class="text-[#0e1b19] text-sm font-medium leading-normal" href="#contacto">Contacto</a>
-            </div>
-            <div class="flex gap-2">
-              <button
-                id="login-btn"
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#17cfb0] text-[#0e1b19] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#14b89c] transition-colors"
-              >
-                <span class="truncate">Iniciar Sesión</span>
-              </button>
-              <button
-                id="register-btn"
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7f3f1] text-[#0e1b19] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#d0e7e3] transition-colors"
-              >
-                <span class="truncate">Registrarse</span>
-              </button>
-            </div>
-          </div>
-        </header>
-        
-        <main class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <!-- Hero Section -->
-            <section id="inicio" class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAxjZCttwNbmTC-y8CQObCr4kiKA5Nes2ELr0UDeiOxqvsQXFp5sn1ajLBU2lQTqW6OVr29B3lV1dKrQdj30qk3rKfmPuti5snOZYzriP072CuUhsNdcdCN7XOHGm-pi_0R0hWuRl31DwXkCWVgnLuqhL2hw5TL0MUyrSQMiLGqSj7Xa8Lb1QZSWVMi_mEWawc_V4fCnjqTFUyx8MnoHTEiMiQuTTaCXRlJKR8mIWZ9K91MXSx92ZZnDQ2_pGiMsVYMMHXwZf5_w");'
-                >
-                  <div class="flex flex-col gap-2 text-center">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                    >
-                      Descubre y Reserva Espacios Únicos
-                    </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      Encuentra el lugar perfecto para tu próximo evento o escapada. Desde hospedajes acogedores hasta amplias zonas campestres, Hostel Manager te conecta con
-                      anfitriones excepcionales.
-                    </h2>
-                  </div>
-                  <div class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
-                    <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
-                      <div
-                        class="text-[#4e978b] flex border border-[#d0e7e3] bg-[#f8fcfb] items-center justify-center pl-[15px] rounded-l-lg border-r-0"
-                        data-icon="MagnifyingGlass"
-                        data-size="20px"
-                        data-weight="regular"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                          <path
-                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
-                          ></path>
-                        </svg>
-                      </div>
-                      <input
-                        id="search-input"
-                        placeholder="Busca tu destino ideal"
-                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0e1b19] focus:outline-0 focus:ring-0 border border-[#d0e7e3] bg-[#f8fcfb] focus:border-[#d0e7e3] h-full placeholder:text-[#4e978b] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
-                        value=""
-                      />
-                      <div class="flex items-center justify-center rounded-r-lg border-l-0 border border-[#d0e7e3] bg-[#f8fcfb] pr-[7px]">
-                        <button
-                          id="search-btn"
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#17cfb0] text-[#0e1b19] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-[#14b89c] transition-colors"
-                        >
-                          <span class="truncate">Buscar</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- Explorar Section -->
-            <section id="explorar" class="flex flex-col gap-10 px-4 py-10 @container">
-              <div class="flex flex-col gap-4">
-                <h1
-                  class="text-[#0e1b19] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
-                >
-                  Explora Diversas Opciones
-                </h1>
-                <p class="text-[#0e1b19] text-base font-normal leading-normal max-w-[720px]">
-                  Hostel Manager ofrece una amplia gama de espacios para satisfacer todas tus necesidades. Ya sea que busques un refugio tranquilo o un lugar vibrante para un
-                  evento, lo tenemos cubierto.
-                </p>
-              </div>
-              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
-                <div class="flex flex-col gap-3 pb-3 option-card">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg card-image hover:scale-105 transition-transform duration-300"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBzxxLvczNGXAij8keAdbwqota36vnCD3l1vD7SBPdp4iJME4UU6NHSSPKHiegM-CmGEwzBYS2hvbp05V_y1jUfqQcjNwkvKjT6Um_J9g4Xwn5zUV6n8ztDa7Tan716ABmnXK2tQOKnurxKGDYU41gFi311o7uMVlyNzl14Bv3oXv3HMN6pnm6VBEiawpY5QmZa2DFpjjAdk7VNGsNCcCClqjZiGqxGjupqf1_0vUgL8JMTSVt-G2uo7-hw3-EY7LsoGa0e94IufA");'
-                  ></div>
-                  <div>
-                    <p class="text-[#0e1b19] text-base font-medium leading-normal">Hospedajes Exclusivos</p>
-                    <p class="text-[#4e978b] text-sm font-normal leading-normal">Cabañas de lujo, apartamentos urbanos y casas rurales con encanto.</p>
-                  </div>
-                </div>
-                <div class="flex flex-col gap-3 pb-3 option-card">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg card-image hover:scale-105 transition-transform duration-300"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyOIYx1V-d_C_1OFIO9ytDkditDmf9Ax2s3-ChOqIsbXno2_Rg-0j5zwsyU2hnSGpoVhVQaap6QxIAZkSei47-7Gx_aO0yvLCGmQzS35sKhj5cIzk7iMCQ22lF7S5Dz96PdS8f5UabBUH4BuGFyQOh-Xp2qu7DfJ1e41Ln-vZA5MoOYKi74khnY4kJQCBpJ3NVXznKe1fJ_ma6DsuJUWbG_6uAzDfycC2ioHfQNaANX1krqWSc5JDFKNi1RteVQFOdneZQ7dzSBg");'
-                  ></div>
-                  <div>
-                    <p class="text-[#0e1b19] text-base font-medium leading-normal">Zonas Campestres</p>
-                    <p class="text-[#4e978b] text-sm font-normal leading-normal">Campings con todas las comodidades, glampings y áreas naturales.</p>
-                  </div>
-                </div>
-                <div class="flex flex-col gap-3 pb-3 option-card">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg card-image hover:scale-105 transition-transform duration-300"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPK7TtfsLZZRMrZEDZiFuXEvQYo2TkUUjgNQc535nM6UOz9TbY3T5FNub1nxJ1ztlkHoK_q_nFlbkgWbQt4AFlXt2MtAllSrpNZPOPmqXJt5LUiAgIh65OHFHOIv-F-10GkcDaReGcfVTqq-j-w1tRMDo87fo6jOyMNKC4w6BTk3cAzZU_ugQOiqAi9wTPEs9_c-3-DuuP5mj7Z0aynUhHOK8Xbk9Vmb1Xr7z6yogKxyT3GCu8feQDOWZPpJbBMVOW5qDx9XC0rQ");'
-                  ></div>
-                  <div>
-                    <p class="text-[#0e1b19] text-base font-medium leading-normal">Espacios para Eventos</p>
-                    <p class="text-[#4e978b] text-sm font-normal leading-normal">Salones de eventos, fincas y espacios al aire libre para celebraciones.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- CTA Section -->
-            <section id="servicios" class="@container">
-              <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
-                <div class="flex flex-col gap-2 text-center">
-                  <h1
-                    class="text-[#0e1b19] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
-                  >
-                    Comienza a Planificar Tu Próxima Aventura
-                  </h1>
-                  <p class="text-[#0e1b19] text-base font-normal leading-normal max-w-[720px]">
-                    Crea una cuenta gratuita y empieza a explorar las opciones disponibles. Encuentra el lugar perfecto para tu próximo evento o escapada.
-                  </p>
-                </div>
-                <div class="flex flex-1 justify-center">
-                  <div class="flex justify-center">
-                    <button
-                      id="cta-register-btn"
-                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#17cfb0] text-[#0e1b19] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow hover:bg-[#14b89c] transition-colors"
-                    >
-                      <span class="truncate">Regístrate Ahora</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- Benefits Section -->
-            <section class="flex flex-col gap-10 px-4 py-10 @container">
-              <div class="flex flex-col gap-4">
-                <h1
-                  class="text-[#0e1b19] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
-                >
-                  Beneficios para Huéspedes y Administradores
-                </h1>
-                <p class="text-[#0e1b19] text-base font-normal leading-normal max-w-[720px]">
-                  Hostel Manager facilita la conexión entre huéspedes y administradores, ofreciendo una plataforma intuitiva y eficiente para la gestión de reservas y la promoción
-                  de espacios.
-                </p>
-              </div>
-              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
-                <div class="flex flex-1 gap-3 rounded-lg border border-[#d0e7e3] bg-[#f8fcfb] p-4 flex-col benefit-card hover:shadow-md transition-shadow duration-300">
-                  <div class="text-[#0e1b19]" data-icon="House" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div class="flex flex-col gap-1">
-                    <h2 class="text-[#0e1b19] text-base font-bold leading-tight">Para Huéspedes</h2>
-                    <p class="text-[#4e978b] text-sm font-normal leading-normal">Encuentra espacios únicos y reserva con facilidad.</p>
-                  </div>
-                </div>
-                <div class="flex flex-1 gap-3 rounded-lg border border-[#d0e7e3] bg-[#f8fcfb] p-4 flex-col benefit-card hover:shadow-md transition-shadow duration-300">
-                  <div class="text-[#0e1b19]" data-icon="Users" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div class="flex flex-col gap-1">
-                    <h2 class="text-[#0e1b19] text-base font-bold leading-tight">Para Administradores</h2>
-                    <p class="text-[#4e978b] text-sm font-normal leading-normal">Gestiona tus espacios, reservas y comunicación con huéspedes.</p>
-                  </div>
-                </div>
-                <div class="flex flex-1 gap-3 rounded-lg border border-[#d0e7e3] bg-[#f8fcfb] p-4 flex-col benefit-card hover:shadow-md transition-shadow duration-300">
-                  <div class="text-[#0e1b19]" data-icon="Calendar" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div class="flex flex-col gap-1">
-                    <h2 class="text-[#0e1b19] text-base font-bold leading-tight">Reservas Fáciles</h2>
-                    <p class="text-[#4e978b] text-sm font-normal leading-normal">Proceso de reserva simplificado y seguro para ambas partes.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </main>
-        
-        <footer id="contacto" class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                <a class="text-[#4e978b] text-base font-normal leading-normal min-w-40 hover:text-[#17cfb0] transition-colors" href="#about">Acerca de</a>
-                <a class="text-[#4e978b] text-base font-normal leading-normal min-w-40 hover:text-[#17cfb0] transition-colors" href="#faq">Preguntas Frecuentes</a>
-                <a class="text-[#4e978b] text-base font-normal leading-normal min-w-40 hover:text-[#17cfb0] transition-colors" href="#privacy">Política de Privacidad</a>
-                <a class="text-[#4e978b] text-base font-normal leading-normal min-w-40 hover:text-[#17cfb0] transition-colors" href="#terms">Términos de Servicio</a>
-              </div>
-              <div class="flex flex-wrap justify-center gap-4">
-                <a href="#" class="social-icon hover:scale-110 transition-transform duration-200">
-                  <div class="text-[#4e978b] hover:text-[#17cfb0] transition-colors" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#" class="social-icon hover:scale-110 transition-transform duration-200">
-                  <div class="text-[#4e978b] hover:text-[#17cfb0] transition-colors" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#" class="social-icon hover:scale-110 transition-transform duration-200">
-                  <div class="text-[#4e978b] hover:text-[#17cfb0] transition-colors" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-              </div>
-              <p class="text-[#4e978b] text-base font-normal leading-normal">© 2024 Hostel Manager. Todos los derechos reservados.</p>
-            </footer>
-          </div>
-        </footer>
-      </div>
+<header>
+    <!-- The brand section shows the logo for the landing page -->
+    <div class="brand">
+        <img src="assets/images/brand-icon-left.png" alt="Left icon">
+        <h1>Hostel Manager</h1>
+        <img src="assets/images/brand-icon-right.png" alt="Right icon">
     </div>
-    
-    <script src="javascript/main.js"></script>
+
+    <!-- The navigation bar includes links to different sections of the landing page -->
+    <nav class="navbar">
+        <a href="#hero" data-key="home">Home</a>
+        <a href="#about" data-key="about">About</a>
+        <a href="#pricing" data-key="pricing">Pricing</a>
+        <a href="#footer" data-key="contact">Contact</a>
+    </nav>
+
+    <!-- The header buttons include login, sign up, and language switcher options -->
+    <div class="headerButtons">
+        <a href="#" class="login" data-key="login">Login</a>
+        <a href="#" class="signUp" data-key="signup">Sign Up</a>
+        <select id="languageSwitcher">
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+        </select>
+    </div>
+</header>
+
+<main>
+    <!-- The hero section is the main attraction of the landing page -->
+    <section id="hero">
+        <!-- It shows an illustration that shows the purpose of the platform -->
+        <div class="heroImage">
+            <img src="assets/images/hero-image.png" alt="Hostel Manager illustration">
+        </div>
+
+        <!-- It contains an attractive title and a description of the platform to engage visitors -->
+        <div class="heroContent">
+            <h1 data-key="heroTitle">Manage your Hostel with Ease</h1>
+            <p data-key="heroText">Hostel Manager helps you organize bookings,
+                clients, and services in one simple platform.</p>
+            <button class="heroButton" data-key="getStarted">Get Started</button>
+        </div>
+    </section>
+
+    <!-- The about section provides information about the platform's features and benefits -->
+    <section id="about">
+        <h2 data-key="aboutTitle">About Hostel Manager</h2>
+        <!-- An embedded video provides a visual overview of the platform's functionality -->
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/ScMzIvxBSi4"
+                title="About the product"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+        </iframe>
+
+        <!-- It includes a grid layout to showcase key features -->
+        <p data-key="aboutText">Our platform offers powerful tools to make hostel management simple and efficient.
+            Here are some of the key features:</p>
+
+        <!-- Features grid layout -->
+        <div class="featuresGrid">
+            <div class="featureCard">
+                <h3 data-key="feature1Title">Real-time Booking Management</h3>
+                <p data-key="feature1Text">Avoid overbooking and manage room availability easily.</p>
+            </div>
+            <div class="featureCard">
+                <h3 data-key="feature2Title">Automated Invoicing & Receipts</h3>
+                <p data-key="feature2Text">Automatically generate receipts and invoices for all payments, integrated with secure gateways like PayPal and Stripe.</p>
+            </div>
+            <div class="featureCard">
+                <h3 data-key="feature3Title">Guest Reviews & Ratings</h3>
+                <p data-key="feature3Text">Encourage direct feedback from guests to continuously improve the hostel experience.</p>
+            </div>
+            <div class="featureCard">
+                <h3 data-key="feature4Title">Promotions & Discounts</h3>
+                <p data-key="feature4Text">Create flexible pricing plans to attract more clients.</p>
+            </div>
+            <div class="featureCard">
+                <h3 data-key="feature5Title">Reports & Analytics</h3>
+                <p data-key="feature5Text">Monitor occupancy, revenue, and usage of additional services.</p>
+            </div>
+            <div class="featureCard">
+                <h3 data-key="feature6Title">Mobile & Remote Access</h3>
+                <p data-key="feature6Text">Manage your hostel from any device, anywhere.</p>
+            </div>
+        </div>
+
+        <section class="steps">
+            <h2 data-key="stepsTitle">How It Works</h2>
+            <div class="stepsBoxes">
+                <div class="step">
+                    <div class="circle">1</div>
+                    <div class="stepText" data-key="step1">Sign Up & Set Up Your Hostel</div>
+                </div>
+                <div class="step">
+                    <div class="circle">2</div>
+                    <div class="stepText" data-key="step2">Manage Bookings & Services</div>
+                </div>
+                <div class="step">
+                    <div class="circle">3</div>
+                    <div class="stepText" data-key="step3">Analyze Reports & Optimize Revenue</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The pricing section outlines the subscription plans available for the platform -->
+        <section id="pricing">
+            <h2 data-key="pricingTitle">Subscription Plans</h2>
+            <p data-key="pricingText">Choose the plan that best fits your hostel’s needs. Simple and transparent pricing, no hidden fees.</p>
+
+            <div class="pricingGrid">
+                <div class="pricingCard">
+                    <h3 data-key="planBasicName">Basic</h3>
+                    <p class="price" data-key="planBasicPrice">$29.90<span>/month</span></p>
+                    <ul>
+                        <li data-key="planBasicFeature1">Up to 50 rooms and bookings</li>
+                        <li data-key="planBasicFeature2">Basic guest management</li>
+                        <li data-key="planBasicFeature3">Monthly occupancy reports</li>
+                        <li data-key="planBasicFeature4">Integrated with PayPal, Stripe, MercadoPago</li>
+                        <li data-key="planBasicFeature5">Automatic notifications to clients (email, WhatsApp, push)</li>
+                    </ul>
+                    <button class="pricingButton" data-key="planBasicButton">Get Started</button>
+                </div>
+
+                <div class="pricingCardHighlight">
+                    <h3 data-key="planStandardName">Standard</h3>
+                    <p class="price" data-key="planStandardPrice">$59.90<span>/month</span></p>
+                    <ul>
+                        <li data-key="planStandardFeature1">Everything in Basic</li>
+                        <li data-key="planStandardFeature2">Up to 150 rooms</li>
+                        <li data-key="planStandardFeature3">Room service management (breakfast, cleaning, laundry)</li>
+                        <li data-key="planStandardFeature4">Promotions and discounts</li>
+                        <li data-key="planStandardFeature5">Weekly financial reports</li>
+                    </ul>
+                    <button class="pricingButton" data-key="planStandardButton">Get Started</button>
+                </div>
+
+                <div class="pricingCard">
+                    <h3 data-key="planPremiumName">Premium</h3>
+                    <p class="price" data-key="planPremiumPrice">$119.90<span>/month</span></p>
+                    <ul>
+                        <li data-key="planPremiumFeature1">Everything in Standard</li>
+                        <li data-key="planPremiumFeature2">Up to 450 rooms</li>
+                        <li data-key="planPremiumFeature3">Advanced dashboard with statistics</li>
+                        <li data-key="planPremiumFeature4">Predictive analytics for occupancy and pricing</li>
+                        <li data-key="planPremiumFeature5">Automatic client notifications</li>
+                    </ul>
+                    <button class="pricingButton" data-key="planStandardButton">Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final call to action section to encourage visitors to sign up -->
+        <section class="finalCallToAction">
+            <h2 data-key="ctaTitle">Ready to Get Started?</h2>
+            <p data-key="ctaText">Join hundreds of hostel owners already simplifying their management with our platform.</p>
+            <a href="#" class="callToActionButton" data-key="ctaButton">Start Free Trial</a>
+        </section>
+    </section>
+</main>
+
+<!-- The footer section includes links to social media, and copyright information -->
+<footer id="footer">
+    <div class="footerLinks">
+        <a data-key="FAQ" href="#">FAQ</a>
+        <a data-key="privacyPolicy" href="#">Privacy Policy</a   >
+        <a data-key="termsOfService" href="#">Terms of Service</a>
+    </div>
+
+    <div class="footerSocial">
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href=https://www.facebook.com/><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <p data-key="copy" class="footerCopy">© 2025 Hostel Manager. All rights reserved.</p>
+</footer>
+
+<script src="assets/scripts/main.js"></script>
 </body>
 </html>

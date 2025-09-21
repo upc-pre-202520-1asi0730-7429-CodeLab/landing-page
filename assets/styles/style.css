@@ -1,0 +1,511 @@
+/**
+ * Theme color is #C1A15A (a shade of gold)
+ * Font: Poppins for headings, Roboto for body text
+ * Layout: Clean, modern, and spacious with ample white space
+ * Buttons: Rounded corners, hover effects
+ * Responsive design for mobile and desktop
+ */
+body {
+    background: #FFF9F0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    border-bottom: 1px solid #C1A15A;
+    position: relative;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.brand img {
+    width: 20px;
+    height: auto;
+}
+
+.navbar {
+    background: #fff;
+    display: flex;
+    gap: 24px;
+    border: 1px solid #C1A15A;
+    padding: 7px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #C1A15A;
+}
+
+.headerButtons .login {
+    margin-right: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.headerButtons .login:hover {
+    color: #C1A15A;
+}
+
+.headerButtons .signUp {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    background-color: #C1A15A;
+    padding: 7px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.headerButtons .signUp:hover {
+    background-color: #A88949;
+    transform: scale(1.05);
+}
+
+.headerButtons .signUp:active {
+    transform: scale(0.9);
+}
+
+#languageSwitcher {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 15px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 1px solid #C1A15A;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#languageSwitcher:hover {
+    background-color: #F3E9D6;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 40px;
+    gap: 40px;
+}
+
+.heroImage {
+    max-width: 40%;
+}
+
+.heroImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.heroContent {
+    max-width: 50%;
+}
+
+.heroContent h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 24px 0;
+}
+
+.heroContent p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0 0 24px 0;
+}
+
+.heroButton {
+    background-color: #C1A15A;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.heroButton:hover {
+    background-color: #A88949;
+    transform: scale(1.05);
+}
+
+.heroButton:active {
+    transform: scale(0.9);
+}
+
+section {
+    padding: 40px 24px;
+    margin-bottom: 40px;
+}
+
+#about, .steps, #pricing, .finalCallToAction {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about h2, .steps h2, #pricing h2, .finalCallToAction h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+#about p, .steps .stepText, #pricing p, .finalCallToAction p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.featureCard {
+    border: 1px solid #C1A15A;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    background: #fff;
+}
+
+.featureCard h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.featureCard p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.stepsBoxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #C1A15A;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stepText {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #C1A15A;
+    border-radius: 10px;
+    padding: 16px;
+    background: #fff;
+    font-size: 18px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricingGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.pricingCard, .pricingCardHighlight {
+    border: 1px solid #C1A15A;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pricingCardHighlight {
+    border: 15px solid #C1A15A;
+}
+
+.pricingCard h3, .pricingCardHighlight h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+}
+
+.pricingCard ul, .pricingCardHighlight ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.pricingCard ul li, .pricingCardHighlight ul li {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.pricingButton {
+    background-color: #C1A15A;
+    border: none;
+    color: #000;
+    border-radius: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.pricingButton:hover {
+    background-color: #A88949;
+    transform: scale(1.05);
+}
+
+.pricingButton:active {
+    transform: scale(0.9);
+}
+
+.finalCallToAction {
+    background-color: #fff;
+    text-align: center;
+    margin: 40px 0;
+    padding: 14px 32px;
+    border-radius: 10px;
+    border: 1px solid #C1A15A;
+}
+
+.finalCallToAction .callToActionButton {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    background-color: #C1A15A;
+    padding: 7px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.finalCallToAction .callToActionButton:hover {
+    background-color: #A88949;
+    transform: scale(1.05);
+}
+
+.finalCallToAction .callToActionButton:active {
+    transform: scale(0.9);
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #C1A15A;
+}
+
+.footerLinks {
+    margin-bottom: 15px;
+}
+
+.footerLinks a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.footerLinks a:hover {
+    text-decoration: underline;
+    color: #C1A15A;
+}
+
+.footerSocial {
+    margin: 15px 0;
+}
+
+.footerSocial a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footerSocial a:hover {
+    color: #C1A15A;
+    transform: scale(1.2);
+}
+
+.footerSocial a:active {
+    transform: scale(0.9);
+}
+
+.footerCopy {
+    font-size: 18px;
+    color: #000;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #C1A15A; }
+    50% { box-shadow: 0 0 20px #C1A15A; }
+    100% { box-shadow: 0 0 5px #C1A15A; }
+}
+
+.glow {
+    animation: glow 2s infinite;
+}
+
+iframe {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    border: none;
+}
+
+@media (max-width: 1155px) {
+    header {
+        padding: 16px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+        padding: 0 16px;
+    }
+
+    .heroImage, .heroContent {
+        max-width: 100%;
+    }
+
+    .heroContent h1 {
+        font-size: 28px;
+    }
+
+    .heroContent p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 24px 16px;
+        margin-bottom: 24px;
+    }
+
+    .featuresGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .stepsBoxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .stepsBoxes .step:nth-child(3) {
+        grid-column: span 2;
+        justify-self: center;
+        max-width: 300px;
+    }
+
+    .steps h2, #about h2, #pricing h2, .finalCallToAction h2 {
+        font-size: 28px;
+    }
+
+    #about p, .stepText, #pricing p, .finalCallToAction p, .featureCard p {
+        font-size: 16px;
+    }
+
+    .pricingGrid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .featureCard, .stepText, .pricingCard, .pricingCardHighlight {
+        padding: 12px;
+    }
+}
