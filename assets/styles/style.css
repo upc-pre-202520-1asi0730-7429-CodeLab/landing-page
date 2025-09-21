@@ -6,10 +6,10 @@
  * Responsive design for mobile and desktop
  */
 body {
-    background: #FFF9F0;
+    background: #FFFFFF;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
     color: #000;
 }
 
@@ -18,25 +18,26 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 24px;
-    border-bottom: 1px solid #C1A15A;
+    border-bottom: 1px solid #E4E4E4;
     position: relative;
+    background-color: #fff;
 }
 
 .brand {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
 }
 
 .brand h1 {
     margin: 0;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     font-weight: 700;
+    color: #34495E;
 }
 
 .brand img {
-    width: 20px;
+    width: 24px;
     height: auto;
 }
 
@@ -44,9 +45,8 @@ header {
     background: #fff;
     display: flex;
     gap: 24px;
-    border: 1px solid #C1A15A;
+    border: 1px solid #E4E4E4;
     padding: 7px 20px;
-    font-family: 'Poppins', sans-serif;
     border-radius: 10px;
     position: absolute;
     left: 50%;
@@ -55,36 +55,34 @@ header {
 
 .navbar a {
     text-decoration: none;
-    color: #000;
-    font-weight: 500;
+    color: #34495E;
+    font-weight: 600;
     font-size: 16px;
     transition: all 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #C1A15A;
+    color: #51F037;
 }
 
 .headerButtons .login {
     margin-right: 24px;
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #000;
+    color: #34495E;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .headerButtons .login:hover {
-    color: #C1A15A;
+    color: #51F037;
 }
 
 .headerButtons .signUp {
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #000;
-    background-color: #C1A15A;
+    color: #fff;
+    background-color: #51F037;
     padding: 7px 20px;
     border-radius: 10px;
     text-decoration: none;
@@ -93,7 +91,7 @@ header {
 }
 
 .headerButtons .signUp:hover {
-    background-color: #A88949;
+    background-color: #44c02e;
     transform: scale(1.05);
 }
 
@@ -102,20 +100,20 @@ header {
 }
 
 #languageSwitcher {
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 700;
     margin-left: 15px;
     padding: 7px 10px;
     border-radius: 10px;
-    border: 1px solid #C1A15A;
+    border: 1px solid #34495E;
     background-color: #fff;
+    color: #34495E;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 #languageSwitcher:hover {
-    background-color: #F3E9D6;
+    background-color: #E4E4E4;
 }
 
 #hero {
@@ -142,24 +140,23 @@ header {
 }
 
 .heroContent h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 42px;
+    font-weight: 800;
     margin: 0 0 24px 0;
+    color: #34495E;
 }
 
 .heroContent p {
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     margin: 0 0 24px 0;
+    color: #000;
 }
 
 .heroButton {
-    background-color: #C1A15A;
-    color: #000;
+    background-color: #51F037;
+    color: #fff;
     border: none;
     border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 700;
     padding: 20px 35px;
@@ -168,7 +165,7 @@ header {
 }
 
 .heroButton:hover {
-    background-color: #A88949;
+    background-color: #44c02e;
     transform: scale(1.05);
 }
 
@@ -187,18 +184,18 @@ section {
 }
 
 #about h2, .steps h2, #pricing h2, .finalCallToAction h2 {
-    font-family: 'Poppins', sans-serif;
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 24px;
     text-align: center;
+    color: #34495E;
 }
 
 #about p, .steps .stepText, #pricing p, .finalCallToAction p {
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     text-align: center;
     margin-bottom: 24px;
+    color: #000;
 }
 
 .featuresGrid {
@@ -208,7 +205,7 @@ section {
 }
 
 .featureCard {
-    border: 1px solid #C1A15A;
+    border: 1px solid #E4E4E4;
     border-radius: 10px;
     padding: 16px;
     text-align: center;
@@ -216,15 +213,15 @@ section {
 }
 
 .featureCard h3 {
-    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 24px;
+    color: #34495E;
 }
 
 .featureCard p {
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    color: #000;
 }
 
 .stepsBoxes {
@@ -244,20 +241,18 @@ section {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #C1A15A;
-    color: #000;
+    background-color: #51F037;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .stepText {
-    font-family: 'Poppins', sans-serif;
-    border: 1px solid #C1A15A;
+    border: 1px solid #E4E4E4;
     border-radius: 10px;
     padding: 16px;
     background: #fff;
@@ -276,7 +271,7 @@ section {
 }
 
 .pricingCard, .pricingCardHighlight {
-    border: 1px solid #C1A15A;
+    border: 1px solid #E4E4E4;
     border-radius: 12px;
     padding: 20px;
     background: #fff;
@@ -287,21 +282,21 @@ section {
 }
 
 .pricingCardHighlight {
-    border: 15px solid #C1A15A;
+    border: 4px solid #34495E;
 }
 
 .pricingCard h3, .pricingCardHighlight h3 {
-    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 15px;
+    color: #34495E;
 }
 
 .price {
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: #000;
 }
 
 .price span {
@@ -318,14 +313,13 @@ section {
 
 .pricingCard ul li, .pricingCardHighlight ul li {
     margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
 .pricingButton {
-    background-color: #C1A15A;
+    background-color: #51F037;
     border: none;
-    color: #000;
+    color: #fff;
     border-radius: 10px;
     padding: 12px 24px;
     cursor: pointer;
@@ -335,7 +329,7 @@ section {
 }
 
 .pricingButton:hover {
-    background-color: #A88949;
+    background-color: #44c02e;
     transform: scale(1.05);
 }
 
@@ -349,15 +343,14 @@ section {
     margin: 40px 0;
     padding: 14px 32px;
     border-radius: 10px;
-    border: 1px solid #C1A15A;
+    border: 1px solid #E4E4E4;
 }
 
 .finalCallToAction .callToActionButton {
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #000;
-    background-color: #C1A15A;
+    color: #fff;
+    background-color: #51F037;
     padding: 7px 20px;
     border-radius: 10px;
     text-decoration: none;
@@ -366,7 +359,7 @@ section {
 }
 
 .finalCallToAction .callToActionButton:hover {
-    background-color: #A88949;
+    background-color: #44c02e;
     transform: scale(1.05);
 }
 
@@ -375,10 +368,10 @@ section {
 }
 
 footer {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
     padding: 20px 0;
-    border-top: 1px solid #C1A15A;
+    border-top: 1px solid #E4E4E4;
+    background: #fff;
 }
 
 .footerLinks {
@@ -388,14 +381,14 @@ footer {
 .footerLinks a {
     margin: 0 15px;
     text-decoration: none;
-    color: #000;
-    font-weight: 500;
+    color: #34495E;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .footerLinks a:hover {
     text-decoration: underline;
-    color: #C1A15A;
+    color: #51F037;
 }
 
 .footerSocial {
@@ -405,13 +398,13 @@ footer {
 .footerSocial a {
     margin: 0 10px;
     font-size: 20px;
-    color: #000;
+    color: #34495E;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .footerSocial a:hover {
-    color: #C1A15A;
+    color: #51F037;
     transform: scale(1.2);
 }
 
@@ -420,14 +413,14 @@ footer {
 }
 
 .footerCopy {
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
 }
 
 @keyframes glow {
-    0% { box-shadow: 0 0 5px #C1A15A; }
-    50% { box-shadow: 0 0 20px #C1A15A; }
-    100% { box-shadow: 0 0 5px #C1A15A; }
+    0% { box-shadow: 0 0 5px #51F037; }
+    50% { box-shadow: 0 0 20px #51F037; }
+    100% { box-shadow: 0 0 5px #51F037; }
 }
 
 .glow {
